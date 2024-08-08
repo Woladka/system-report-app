@@ -1,12 +1,32 @@
+<!-- templates/home.html -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Welcome</h1>
-    <form method="post">
-        <input type="submit" value="Generate Report">
-    </form>
+    <header>
+        <div class="container">
+            <h1>System Health Checker</h1>
+        </div>
+    </header>
+    <div class="container">
+        <form action="/generate_report" method="post">
+            <input type="submit" value="Generate Report">
+        </form>
+        <form action="/send_report" method="post">
+            <label for="email">Enter your email to receive the report:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <input type="submit" value="Send Report">
+        </form>
+        {% if pdf_content_base64 %}
+            <h2>System Report</h2>
+            <iframe src="data:application/pdf;base64,{{ pdf_content_base64 }}" width="100%" height="600px"></iframe>
+        {% endif %}
+    </div>
 </body>
 </html>

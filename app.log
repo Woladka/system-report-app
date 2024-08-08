@@ -1,0 +1,31 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-421-505
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-421-505
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:10:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:10:51] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:10:51] "GET /home HTTP/1.1" 200 -
+ERROR:root:Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a640c23a62f3a-a7dc9d45452sm744062066b.111 - gsmtp')
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:10:53] "[35m[1mPOST /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:10:54] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:10:54] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:10:54] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:11:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-421-505
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:14:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:14:46] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:14:46] "GET /home HTTP/1.1" 200 -
+ERROR:root:Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a640c23a62f3a-a7dc9d43913sm740076166b.105 - gsmtp')
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:14:48] "[35m[1mPOST /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:14:48] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:14:48] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 14:14:49] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
