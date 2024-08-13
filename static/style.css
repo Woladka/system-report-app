@@ -4,7 +4,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #eaeaea;
+    color: #333;
 }
 
 .container {
@@ -14,11 +15,10 @@ body {
 }
 
 header {
-    background: #333;
+    background: #004080;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #bbb 1px solid;
+    padding: 20px 0;
+    border-bottom: 3px solid #003366;
 }
 
 header h1 {
@@ -35,20 +35,25 @@ form {
     margin-bottom: 20px;
 }
 
-input[type="email"], input[type="submit"] {
+input[type="submit"], button {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    background: #333;
-    color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    background: #004080;
+    color: #fff;
 }
 
-input[type="submit"]:hover {
-    background: #555;
+input[type="submit"]:hover, button:hover {
+    background: #003366;
+}
+
+h2 {
+    color: #004080;
+}
+
+iframe {
+    border: 2px solid #004080;
+    border-radius: 8px;
 }
